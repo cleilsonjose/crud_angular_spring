@@ -1,6 +1,7 @@
 import { Course } from './../model/course';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { first, tap } from 'rxjs';
 
 
 @Injectable({
@@ -8,13 +9,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CoursesService {
 
+  private readonly API  = '/assets/Courses.json';
+
   constructor(private httpClient: HttpClient) { }
 
-  list(): Course[] {
-    return [
-        { _id:'1',name: "Angular",category :"Fontend"},
-        {_id:'2',name: "Java",category :"Backend"},
-        {_id:'3',name: "SpringBoot",category :"Backend",}
-    ];
+  list() {
+    return this.httpClient.get<Course[]>(this.API)
+    .pipe(
+      first(),
+      tap(courses => console.log(courses))
+    );
   }
 }

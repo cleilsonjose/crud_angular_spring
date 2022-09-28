@@ -1,0 +1,5 @@
+[
+  { "_id":"1","name": "Angular","category" :"Fontend"},
+  {"_id":2,"name": "Java","category" :"Backend"},
+  {"_id":3,"name": "SpringBoot","category" :"Backend"}
+]
