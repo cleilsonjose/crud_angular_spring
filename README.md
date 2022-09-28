@@ -29,7 +29,7 @@ ng g m nome_da_rota --routing
 ## criar um component
 
 ```
-ng g c nome_do_component
+ng g c nome_do_service
 ```
 
 ## cores
@@ -37,3 +37,9 @@ ng g c nome_do_component
 [Theming Angular Material](https://material.angular.io/guide/theming)
 
 [Color System - Material Desing](https://material.io/design/color/the-color-system.html#tools-for-picking-colors)
+
+## criar um serviço
+
+```
+ng g s nome_do_component
+```
