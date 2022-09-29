@@ -26,10 +26,11 @@ ng add @angular/material
 ng g m nome_da_rota --routing
 ```
 
-## criar um component
+## criar um service
+
 
 ```
-ng g c nome_do_service
+ng g s nome_do_service
 ```
 
 ## cores
@@ -38,8 +39,13 @@ ng g c nome_do_service
 
 [Color System - Material Desing](https://material.io/design/color/the-color-system.html#tools-for-picking-colors)
 
-## criar um serviço
+## criar um component
+```
+ng g c nome_do_component
+```
+
+## criar um pipe
 
 ```
-ng g s nome_do_component
+ng g pipe nome_do_pipe
 ```
