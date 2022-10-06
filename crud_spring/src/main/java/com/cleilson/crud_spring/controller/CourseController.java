@@ -1,15 +1,18 @@
 package com.cleilson.crud_spring.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/hello")
-public class HelloController {
-    
+@RequestMapping("/api/courses")
+public class CourseController {
+    //@RequestMapping(method = RequestMethod.GET)
     @GetMapping
-    public String hello() {
-        return "Hello, world";
+    public List<Object> list(){
+        return null;
     }
+    
 }

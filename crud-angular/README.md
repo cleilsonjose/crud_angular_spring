@@ -49,3 +49,19 @@ ng g c nome_do_component
 ```
 ng g pipe nome_do_pipe
 ```
+
+#SPRING 
+
+<p>
+  Colocar:
+
+```
+  @RequestMapping(method = RequestMethod.GET)
+```java
+
+  é o mesmo que 
+
+```
+  @GetMapping
+```java
+</p>
