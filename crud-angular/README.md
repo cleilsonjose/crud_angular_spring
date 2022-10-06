@@ -52,16 +52,16 @@ ng g pipe nome_do_pipe
 
 #SPRING 
 
-<p>
-  Colocar:
+<p>Colocar:</p>
 
 ```
   @RequestMapping(method = RequestMethod.GET)
-```java
+```
 
-  é o mesmo que 
-
+<p> é o mesmo que:</p>
+ 
 ```
   @GetMapping
-```java
-</p>
+```
+
+
