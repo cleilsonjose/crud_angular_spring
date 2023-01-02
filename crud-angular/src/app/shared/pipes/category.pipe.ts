@@ -11,7 +11,7 @@ export class CategoryPipe implements PipeTransform {
     }else if(value === 'Backend'){
       return 'computer'
     }else{
-      return 'code';
+      return 'null';
     }
   }
 
